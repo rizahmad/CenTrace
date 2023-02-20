@@ -1,0 +1,112 @@
+sudo apt-get install python-de
+
+https://publicdata.caida.org/datasets/routing/routeviews-prefix2as/
+
+sudo -s
+source ./venv/bin/actiavte
+pip install PGPy
+pip install cryptography // this gives no attribute register interface error
+pip install cryptography==37.0.4
+
+python traceroute.py --filename examples/input.csv -o examples/output.csv -v -l examples/log.txt --iprr --comparequoted -r 5 -R 120 -p -pd examples/pcaps -m 2 -i enp1s0f1 -rv pyasn_utils/ipasn_db_file -an pyasn_utils/asn_file.json --https -cr 2 -mi 3
+
+iptables status
+
+iptables -L -v
+sudo iptables -I OUTPUT -p tcp --tcp-flags ALL RST,ACK -j DROP
+
+
+python traceroute.py -c alislam.org -u facebook.com -s 1.1.1.1 -rv pyasn_utils/ipasn_db_file -an pyasn_utils/asn_file.json
+
+python pcap_parse.py --dir ./test1/ -rv pyasn_utils/ipasn_db_file -an pyasn_utils/asn_file.json -o pcap_output
+
+14-02-2023
+python traceroute.py -c alislam.org -u facebook.com -s 1.1.1.1 -p -pd test1/ -o test1/traceroute_output.csv -rv pyasn_utils/ipasn_db_file -an pyasn_utils/asn_file.json -q --iprr -l test1/log.txt -r 5 -R 120 -m 2 -cr 2 -mi 3
+python pcap_parse.py --dir ./test1/ -rv pyasn_utils/ipasn_db_file -an pyasn_utils/asn_file.json -o ./test1/pcap_output --summary
+
+for the given domains, the results are not very attractive...
+
+
+(venv) root@rizwan-vm:/home/rizwan/mscs/CenTrace# nslookup
+> alislam.org
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	alislam.org
+Address: 192.124.249.2
+Name:	alislam.org
+Address: 192.124.249.28
+Name:	alislam.org
+Address: 192.124.249.23
+
+
+
+root@rizwan-vm:/home/rizwan# traceroute alislam.org
+traceroute to alislam.org (192.124.249.2), 30 hops max, 60 byte packets
+ 1  RAHMAD-LT-01.mshome.net (172.21.64.1)  1.238 ms  1.207 ms  1.188 ms
+ 2  10.104.0.1 (10.104.0.1)  2.266 ms  2.023 ms  2.627 ms
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+
+rizwan@rizwan-vm:~/mscs/CenTrace/pyasn_utils$ grep ipasn_db_file -e 192.124.249
+192.124.249.0/24	30148
+
+rizwan@rizwan-vm:~/mscs/CenTrace/pyasn_utils$ grep asn_file.json -e 30148
+    "30148": "SUCURI-SEC, US",
+	
+Domain Information
+Domain:alislam.org
+Registrar:eNom, Inc.
+Registered On:1995-08-28
+Expires On:2023-08-27
+Updated On:2022-07-28
+Status:clientTransferProhibited
+Name Servers:10.sucuridns.com
+11.sucuridns.com
+14.sucuridns.com
+15.sucuridns.com
+Registrant Contact
+Organization:Data Protected
+State:WA
+Country:US
+
+
+should use the above servre ip 192.124.249.0 or 192.124.249.2
+using https://dnslytics.com/reverse-ip we can find other domains hosted on the same server: search 192.124.249.2
+60plus.org
+9marks.org
+
+(venv) rizwan@rizwan-vm:~/mscs/CenTrace$ nslookup alislam.org 10.sucuridns.com
+Server:         10.sucuridns.com
+Address:        192.161.0.10#53
+
+Name:   alislam.org
+Address: 192.124.249.23  ---> this address shows up as the single one hosting alislam.org
+Name:   alislam.org
+Address: 192.124.249.2
+Name:   alislam.org
+Address: 192.124.249.28
+
+(venv) rizwan@rizwan-vm:~/mscs/CenTrace$ nslookup 60plus.org ns56.domaincontrol.com
+Server:         ns56.domaincontrol.com
+Address:        173.201.75.28#53
+
+Name:   60plus.org
+Address: 192.124.249.2
+
+python traceroute.py -c alislam.org -u 60plus.org -s 192.124.249.23 -p -pd test2/ -o test2/traceroute_output.csv -rv pyasn_utils/ipasn_db_file -an pyasn_utils/asn_file.json -q --iprr -l test2/log.txt -r 5 -R 120 -m 2 -cr 2 -mi 3 -v
+
+looks like still the tcp handshake is not working with the centrace tool.
+i can try with telnet which also connects to different ip almost everytime. clustered hosting perhaps?
+
