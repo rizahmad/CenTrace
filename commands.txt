@@ -1,4 +1,6 @@
-sudo apt-get install python-de
+sudo apt-get install python-dev-is-python3
+apt-get install build-essential
+apt-get install python3-dev
 
 https://publicdata.caida.org/datasets/routing/routeviews-prefix2as/
 
@@ -11,7 +13,7 @@ pip install cryptography==37.0.4
 python traceroute.py --filename examples/input.csv -o examples/output.csv -v -l examples/log.txt --iprr --comparequoted -r 5 -R 120 -p -pd examples/pcaps -m 2 -i enp1s0f1 -rv pyasn_utils/ipasn_db_file -an pyasn_utils/asn_file.json --https -cr 2 -mi 3
 
 iptables status
-
+https://stackoverflow.com/questions/13215135/how-to-make-all-outgoing-rst-drop
 iptables -L -v
 sudo iptables -I OUTPUT -p tcp --tcp-flags ALL RST,ACK -j DROP
 
