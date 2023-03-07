@@ -8,19 +8,17 @@
 #              
 #Author:      21030005@lums.edu.pk
 
-if [ $# -lt 3 ]
+if [ $# -lt 1 ]
 then
-  echo "Please check arguments: <censored domain> <uncensored domain> <remote endpoint>"
+  echo "Please check arguments: <input file name>"
   exit 1
 fi
 
-CENSORED_DOMAIN=$1
-UNCENSORED_DOMAIN=$2
-REMOTE_ENDPOINT=$3
-HTTPS=$4
+INPUT_FILE=$1
+HTTPS=$2
 
 DATE=$(date +"%Y-%m-%d_%H-%M-%S")
-DIRECTORY_NAME="Test_"$CENSORED_DOMAIN"_"$UNCENSORED_DOMAIN"_"$REMOTE_ENDPOINT"_"$DATE
+DIRECTORY_NAME="Test_"$DATE
 
 
 echo "Flushing iptables"
@@ -36,7 +34,7 @@ echo "Creating testing directory"
 mkdir $DIRECTORY_NAME
 
 echo "Executing traceroute.py"
-python traceroute.py -c $CENSORED_DOMAIN -u $UNCENSORED_DOMAIN -s $REMOTE_ENDPOINT -p -pd $DIRECTORY_NAME/ -o $DIRECTORY_NAME/traceroute_output.csv -rv pyasn_utils/ipasn_db_file -an pyasn_utils/asn_file.json -q -l $DIRECTORY_NAME/log.txt -r 5 -R 120 -m 2 $HTTPS -cr 5 -mi 11 -v 
+python traceroute.py -f $INPUT_FILE -p -pd $DIRECTORY_NAME/ -o $DIRECTORY_NAME/traceroute_output.csv -rv pyasn_utils/ipasn_db_file -an pyasn_utils/asn_file.json -q -l $DIRECTORY_NAME/log.txt -r 5 -R 120 -m 2 $HTTPS -cr 5 -mi 11 -v 
 
 if [ $? -ne 0 ]
 then

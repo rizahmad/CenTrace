@@ -16,6 +16,7 @@ iptables status
 https://stackoverflow.com/questions/13215135/how-to-make-all-outgoing-rst-drop
 iptables -L -v
 sudo iptables -I OUTPUT -p tcp --tcp-flags ALL RST,ACK -j DROP
+sudo iptables -I OUTPUT -p tcp --tcp-flags ALL RST -j DROP
 
 
 python traceroute.py -c alislam.org -u facebook.com -s 1.1.1.1 -rv pyasn_utils/ipasn_db_file -an pyasn_utils/asn_file.json
