@@ -113,3 +113,14 @@ python traceroute.py -c alislam.org -u 60plus.org -s 192.124.249.23 -p -pd test2
 looks like still the tcp handshake is not working with the centrace tool.
 i can try with telnet which also connects to different ip almost everytime. clustered hosting perhaps?
 
+
+Server IPs for the who is blocking me paper.
+
+Germany
+IP : 141.95.29.209
+US
+IP : 108.62.222.2
+Nayatel
+IP : 101.50.86.106
+
+ssh -i <address of key on your laptop> root@ip
