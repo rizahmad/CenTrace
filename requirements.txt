@@ -1,3 +1,6 @@
+setuptools_rust
 pyasn==1.6.1
 scapy==2.5.0
 cryptography==37.0.4
+
+
