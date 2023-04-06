@@ -12,6 +12,7 @@ ssh -i <address of key on your laptop> root@ip
 #from windows machine for Nayatel (github repo private key in ~/.ssh/):
 ssh -i C:\Users\rizwa\.ssh\regionalism_key root@101.50.86.106
 cd /home/rizwan
+ssh-keygen -t ed25519 -C "21030005@lums.edu.pk"
 GIT_SSH_COMMAND="ssh -i ~/.ssh/centrace_rizwan" git clone -b main git@github.com:rizahmad/CenTrace.git
 
 # python 3.9 setup
