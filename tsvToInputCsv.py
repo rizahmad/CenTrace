@@ -15,7 +15,7 @@ def main():
     endpoints["104.16.100.49"] = 13335
     endpoints["116.202.120.183"] = 24940
     endpoints["94.20.71.165"] = 29049
-    endpoints["46.32.168.255"] = 211790
+    #endpoints["46.32.168.255"] = 211790
 
     domains = set()
     with open(INPUT_FILE) as fd:
