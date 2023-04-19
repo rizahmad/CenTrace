@@ -1,0 +1,50 @@
+domain	last_responding_IP	server_ip	block_level	crawler_block_type	traceroute_block_type	block_status_code	lri_country	srv_country	lri_location_category	lri_comparison	lri_distance	merged_hops	min_diff	ref_ip	cdn_str	final_label
+darkmp3.su	216.6.57.6	104.18.45.110	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	1	104.18.191.77	CDN_True	HTTP-Serverside-Blocking
+yabancidizi.vip	216.6.87.42	104.26.13.19	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER:CLOUDFLARE_Security	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	1	104.26.12.102	CDN_True	HTTP-Serverside-Blocking
+origamitutorials.com	38.32.13.210	143.95.151.22	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER	US	US	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	0	0	N/A	CDN_False	HTTP-Serverside-Blocking
+azureegde.net	209.59.157.243	67.227.226.240	HTTP	Blockpage	HTTP-TracerouteComplete	404-OTHER	US	US	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	0	1	N/A	CDN_False	HTTP-Serverside-Blocking
+diycraftsdecors.com	209.59.157.243	67.227.226.240	HTTP	Blockpage	HTTP-TracerouteComplete	404-OTHER	US	US	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	0	1	N/A	CDN_False	HTTP-Serverside-Blocking
+vividseats.com	66.110.96.89	23.5.224.180	HTTP	Blockpage	HTTP-TracerouteComplete	405-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	1	23.10.142.217	CDN_True	HTTP-Serverside-Blocking
+gozaida.com	216.239.62.171	216.239.32.21	HTTP	Blockpage	HTTP-TracerouteComplete	404-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	34.120.10.192	CDN_True	HTTP-Serverside-Blocking
+jackwithyou.in	216.239.62.171	216.239.32.21	HTTP	Blockpage	HTTP-TracerouteComplete	404-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	34.120.10.192	CDN_True	HTTP-Serverside-Blocking
+technicalking.co	173.208.126.21	162.210.196.171	HTTP	Blockpage	HTTP-TracerouteComplete	429-OTHER	US	US	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	0	0	N/A	CDN_False	HTTP-Serverside-Blocking
+darkville.tv	66.198.70.2	172.67.201.2	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER:ABUSE_BLOCKED-CAPTCHA	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+priceline.com.au	180.87.98.37	45.60.81.222	HTTP	Blockpage	HTTP-TracerouteComplete	200-UNCAUGHT: Incapsula incident	SG	US	ELSEWHERE	FROM_TEST	CLOSE_TO_SERVER	0	1	107.154.251.12	CDN_True	HTTP-Serverside-Blocking
+betwinner1.com	5.254.68.202	213.183.44.9	HTTP	Blockpage	HTTP-TracerouteComplete	200-UNCAUGHT:GEO_BLOCKED-Other	RO	RU	ELSEWHERE	FROM_CONTROL	CLOSE_TO_SERVER	0	1	N/A	CDN_False	HTTP-Serverside-Blocking
+braquopronos.com	66.198.70.2	172.67.214.169	HTTP	Blockpage	HTTP-TracerouteComplete	503-OTHER:ABUSE_BLOCKED-BV	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+howtobetrendy.com	66.198.70.2	172.67.220.240	HTTP	NoResponse	HTTP-TracerouteComplete	N/A	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+gupshupcorner.com	66.198.70.2	104.24.100.157	HTTP	Blockpage	HTTP-TracerouteComplete	503-OTHER:ABUSE_BLOCKED-BV	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+photonpro.co.uk	172.253.71.165	34.102.136.180	HTTP	Blockpage	HTTP-TracerouteComplete	404-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	34.120.10.192	CDN_True	HTTP-Serverside-Blocking
+craigslist.org	208.82.237.138	208.82.237.129	HTTP	Blockpage	HTTP-TracerouteComplete	403-CRAIGSLIST	US	US	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	0	1	N/A	CDN_False	HTTP-Serverside-Blocking
+exness.com	192.80.17.94	45.60.78.64	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER: Incapsula incident	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	192.230.67.213	CDN_False	HTTP-Serverside-Blocking
+wayfair.co.uk	209.85.252.237	35.204.162.176	HTTP	Blockpage	HTTP-TracerouteComplete	200-UNCAUGHT:Google_unusual_traffic	US	US	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	9	1	N/A	CDN_True	HTTP-Serverside-Blocking
+menulog.com.au	4.16.52.155	45.60.108.17	HTTP	Blockpage	HTTP-TracerouteComplete	200-UNCAUGHT: Incapsula incident	US	US	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	0	1	N/A	CDN_True	HTTP-Serverside-Blocking
+sezonlukdizi.vip	66.198.70.2	172.67.181.15	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER:CLOUDFLARE_Security	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+imeem.com	209.200.144.205	72.52.10.14	HTTP	Blockpage	HTTP-TracerouteComplete	410-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	72.52.10.14	CDN_False	HTTP-Serverside-Blocking
+a53535.com	203.246.163.94	154.92.5.144	HTTP	Blockpage	HTTP-TracerouteComplete	406-OTHER	KR	SC	ELSEWHERE	FROM_CONTROL	CLOSE_TO_SERVER	2	1	N/A	CDN_False	HTTP-Serverside-Blocking
+edsurge.com	3.13.31.214	3.13.31.214	HTTP	Blockpage	HTTP-TracerouteComplete	200-UNSUPPORTED_BROWSER	US	US	SAME_AS_SERVER	LRI_NOT_FOUND_ANYWHERE	N/A	N/A	-1	N/A	CDN_True	Inconclusive
+axs.com	52.93.135.177	54.184.79.217	HTTP	Blockpage	HTTP-TracerouteComplete	456-OTHER	US	US	SAME_AS_SERVER	LRI_NOT_FOUND_ANYWHERE	N/A	N/A	-1	N/A	CDN_True	Inconclusive
+registrarcorp.com	216.6.87.221	104.26.8.40	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	1	104.26.12.102	CDN_True	HTTP-Serverside-Blocking
+spectre.ai	66.198.70.2	172.67.7.94	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER:CLOUDFLARE_Security	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+housedownload.com	37.1.200.4	37.1.205.233	HTTP	Blockpage	HTTP-TracerouteComplete	404-OTHER	NL	NL	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	0	1	N/A	CDN_False	HTTP-Serverside-Blocking
+iqoption.org	66.198.155.18	185.117.134.18	HTTP	Blockpage	HTTP-TracerouteComplete	200-UNCAUGHT:GEO_BLOCKED-Other	PH	ERR	ELSEWHERE	FROM_TEST	CLOSE_TO_SERVER	0	0	185.117.134.17	CDN_False	HTTP-Serverside-Blocking
+dnspark.net	69.167.128.153	72.52.178.23	HTTP	Blockpage	HTTP-TracerouteComplete	404-OTHER	US	US	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	0	1	N/A	CDN_False	HTTP-Serverside-Blocking
+mivaldi.com	66.198.70.2	104.27.162.208	HTTP	Blockpage	HTTP-TracerouteComplete	503-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+futureblog2338.com	162.144.240.11	67.20.64.35	HTTP	Blockpage	HTTP-TracerouteComplete	503-OTHER: Incapsula incident	US	US	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	0	1	N/A	CDN_False	HTTP-Serverside-Blocking
+redstation.com	130.180.202.11	62.233.121.75	HTTP	NoResponse	HTTP-TracerouteComplete	N/A	GB	GB	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	0	2	N/A	CDN_False	HTTP-Serverside-Blocking
+nzxt.com	150.222.242.179	35.164.133.186	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER	US	US	SAME_AS_SERVER	LRI_NOT_FOUND_ANYWHERE	N/A	N/A	-1	N/A	CDN_True	Inconclusive
+omio.com	66.198.70.2	104.18.14.166	HTTP	Blockpage	HTTP-TracerouteComplete	405-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+careerone.com.au	66.198.70.2	172.67.7.122	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER:ABUSE_BLOCKED-CAPTCHA	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+youmeandtrends.com	66.198.70.2	104.18.49.232	HTTP	Blockpage	HTTP-TracerouteComplete	200-Empty-page	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+adkengage.com	149.6.128.82	68.66.248.44	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	1	68.66.248.44	CDN_False	HTTP-Serverside-Blocking
+hungrygowhere.com	66.198.70.2	104.20.70.44	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER:ABUSE_BLOCKED-CAPTCHA	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+movieeater.site	66.198.70.2	104.18.33.62	HTTP	NoResponse	HTTP-TracerouteComplete	N/A	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+skybet.com	63.243.128.25	23.66.223.131	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	1	1	23.66.223.131	CDN_True	HTTP-Serverside-Blocking
+dizist.pw	66.198.70.2	172.67.199.45	HTTP	Blockpage	HTTP-TracerouteComplete	404-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
+lufthansa.com	5.23.30.17	67.207.75.188	HTTP	Blockpage	HTTP-TracerouteComplete	405-OTHER	ERR	US	ERR	FROM_TEST	CLOSE_TO_SERVER	0	0	67.207.75.188	CDN_True	HTTP-Serverside-Blocking
+ictsystems.com.pk	162.241.144.61	192.185.143.10	HTTP	Blockpage	HTTP-TracerouteComplete	503-OTHER	US	US	SAME_AS_SERVER	FROM_CONTROL	CLOSE_TO_SERVER	0	1	N/A	CDN_False	HTTP-Serverside-Blocking
+octaglobal.com	172.253.65.85	23.251.139.94	HTTP	Blockpage	HTTP-TracerouteComplete	404-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	8	1	23.251.139.94	CDN_True	HTTP-Serverside-Blocking
+myeventarticle.com	209.85.244.65	216.239.34.21	HTTP	Blockpage	HTTP-TracerouteComplete	404-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	34.120.10.192	CDN_True	HTTP-Serverside-Blocking
+awehobrasp.live	91.121.215.119	51.89.187.136	HTTP	Blockpage	HTTP-TracerouteComplete	404-OTHER	FR	GB	ELSEWHERE	FROM_CONTROL	CLOSE_TO_SERVER	4	1	N/A	CDN_False	HTTP-Serverside-Blocking
+faridagupta.com	52.95.67.178	13.126.66.12	HTTP	Blockpage	HTTP-TracerouteComplete	403-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	5	1	3.6.118.31	CDN_True	HTTP-Serverside-Blocking
+controller.com	66.198.70.2	104.16.151.51	HTTP	Blockpage	HTTP-TracerouteComplete	405-OTHER	US	US	SAME_AS_SERVER	FROM_TEST	CLOSE_TO_SERVER	0	0	104.27.140.115	CDN_True	HTTP-Serverside-Blocking
